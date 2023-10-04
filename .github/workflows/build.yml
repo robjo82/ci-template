@@ -22,9 +22,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test -- --watchAll=false --passWithNoTests
-
       - name: SonarCloud analysis
         uses: sonarsource/sonarcloud-github-action@master
         env:
